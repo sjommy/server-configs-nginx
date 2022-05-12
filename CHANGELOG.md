@@ -1,3 +1,37 @@
+### 4.2.0 (February 24, 2022)
+
+* Extend media, font and default cache TTL to 1 year
+  [[4a22965](https://github.com/h5bp/server-configs-nginx/commit/4a229657fdad9c039529314aed0fc0ae17480829)]
+  [[3869706](https://github.com/h5bp/server-configs-nginx/commit/3869706922bf4897d20c5cc35817a1a4107d7623)]
+* Add compression support for `.ico` files
+  [[537a022](https://github.com/h5bp/server-configs-nginx/commit/537a0229a1bfa89ebc983aa0d78b62cb6998a997)]
+* Dropped legacy and non web related file types
+  [[a961768](https://github.com/h5bp/server-configs-nginx/commit/a9617688fc921e728d5dcd044db9327aa50ede79)]
+  [[175cc52](https://github.com/h5bp/server-configs-nginx/commit/175cc52e3fbd75628021df55f61f25cadca8e45c)]
+
+### 4.1.0 (October 28, 2021)
+
+* Add support for custom values import
+  [[fbdaa3f](https://github.com/h5bp/server-configs-nginx/commit/fbdaa3f867f3c8e1926df6bfe5943bfe57926ef5)]
+
+### 4.0.0 (July 31, 2021)
+
+* ⚠️ **Breaking**: End of support for Internet Explorer (`X-UA-Compatible` and `X-XSS-Protection` headers)
+  [[4556277](https://github.com/h5bp/server-configs-nginx/commit/4556277ced27fdb96874bf14d3ffe59925c7fc41)] 
+  [[836467c](https://github.com/h5bp/server-configs-nginx/commit/836467c8b57ab6788745c441fb31046ca11384e3)]
+* 🎉 Security first! Modernize TLS configuration
+  [[688348a](https://github.com/h5bp/server-configs-nginx/commit/688348a5fd991fcbe1a535e51056c420a81c9ae7)]
+* 🎉 Security first! Refresh policies-related headers usage
+  * Add Cross Origin Policies headers (COOP/COEP/CORP)
+    [[25a569d](https://github.com/h5bp/server-configs-nginx/commit/25a569d97d9634497498a4a387f1784269d998bb)]
+  * Add `Permissions-Policy` header
+    [[36310b9](https://github.com/h5bp/server-configs-nginx/commit/36310b927b167ef8561dc6407ab9707038b804c7)]
+  * Make `Content-Security-Policy` disallow 'object-src' by default
+    [[8600df1](https://github.com/h5bp/server-configs-nginx/commit/8600df101823e9fe71e4b13a4dfa4009726929b4)]
+* Add mime-type `image/jxl`
+  [[b9ef881](https://github.com/h5bp/server-configs-nginx/commit/b9ef881d62311ff7b2555472135529d07483bab6)]
+* Improve inline comments.
+
 ### 3.3.0 (January 6, 2021)
 
 * Add mime-type `image/avif` and `image/avifs`
